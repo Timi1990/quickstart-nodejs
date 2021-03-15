@@ -47,8 +47,6 @@ Resources:
               - kms:GenerateDataKey
               - kms:GenerateDataKeyWithoutPlaintext
             Resource: '*'
-  Tags:
-    - Tag
   newItem:
     Type: AWS::Serverless::Function
     Properties:
