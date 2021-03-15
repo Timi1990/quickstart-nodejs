@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::Serverless-2016-10-31
 Resources:
-  cmk:
+  myKey:
     Type: AWS::KMS::Alias
     Properties:
-      AliasName: alias/timi2
+      AliasName: alias/timi
       TargetKeyId: 5d2a9183-deb0-4dd0-9247-a2f4dded79bb
   newItem:
     Type: AWS::Serverless::Function
