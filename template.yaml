@@ -5,7 +5,7 @@ Resources:
     Type: AWS::KMS::Alias
     Properties:
       AliasName: alias/timi
-      TargetKeyId: 5d2a9183-deb0-4dd0-9247-a2f4dded79bb
+      TargetKeyId: !Ref 5d2a9183-deb0-4dd0-9247-a2f4dded79bb
   newItem:
     Type: AWS::Serverless::Function
     Properties:
