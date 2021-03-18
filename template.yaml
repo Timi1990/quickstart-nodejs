@@ -6,11 +6,11 @@ Resources:
     Properties:
       AliasName: alias/timi
       TargetKeyId: fe91fb60-cccc-4b72-a2e0-6b585cb982fb
-  newItem:
+  newItem2:
     Type: AWS::Serverless::Function
     Properties:
       KmsKeyArn: arn:aws:kms:us-west-2:139457818185:key/fe91fb60-cccc-4b72-a2e0-6b585cb982fb
-      FunctionName: !Sub ${AWS::StackName}-newItem
+      FunctionName: !Sub ${AWS::StackName}-newItem-2
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: newItem
@@ -35,10 +35,10 @@ Resources:
             Path: /newItem
             Method: POST
             RestApiId: !Ref QuickstartApi
-  getItems:
+  getItems2:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub ${AWS::StackName}-getItems
+      FunctionName: !Sub ${AWS::StackName}-getItems-2
       KmsKeyArn: arn:aws:kms:us-west-2:139457818185:key/fe91fb60-cccc-4b72-a2e0-6b585cb982fb
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
