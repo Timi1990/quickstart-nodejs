@@ -4,7 +4,7 @@ Globals:
   Function:
     Environment:
       Variables:
-        LUMIGO_TRACER_TOKEN: t_c39bd91203a24bb8861b0
+        LUMIGO_TRACER_TOKEN: test
 Resources:
   myKey:
     Type: AWS::KMS::Alias
