@@ -1,5 +1,10 @@
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::Serverless-2016-10-31
+Globals:
+  Function:
+    Environment:
+      Variables:
+        LUMIGO_TRACER_TOKEN: t_c39bd91203a24bb8861b0
 Resources:
   myKey:
     Type: AWS::KMS::Alias
